@@ -1,0 +1,359 @@
+* {
+	box-sizing: border-box;
+  }
+
+ul#listaTopo{
+	list-style-type:none;
+	float:top;
+	margin:0;
+	padding:15px;
+	overflow: hidden;
+	background-color:rgb(255, 255, 255);
+	}
+		
+	ul#listaTopo li{
+	float: right;
+	}
+	
+	ul#listaTopo li a{
+	color:rgb(121, 214, 194);
+	text-align:center;
+	padding:20px;
+	font-family:Goudy Old Style;
+	font-size: 15px ;
+	text-decoration: none;
+	}
+	
+	ul#listaTopo li a:hover{
+	color: rgb(190, 185, 185);
+	}
+		
+	ul#listaTopo li#cadastroId{
+	border-right: rgb(0, 0, 0) solid 1px;
+	}
+	.menu{
+	width: 100;
+	height: 55px;
+	background-color:rgb(121, 214, 194);
+	font-family:'Times New Roman';
+    font-size: 19px;
+    border-bottom: 0px solid white;
+	}
+	
+	.menu  ul li a{
+		color: white;
+	}
+	.menu>ul{
+		list-style:none;	
+		position:relative;
+		margin-left:50px;
+	
+		}
+	.menu ul li{
+			width:150px;
+			float:left;
+		}
+	
+	.menu a{
+		padding:15px;
+		display:block;
+		text-decoration: none;
+		background-color: rgb(121, 214, 194);
+		text-align:center;
+		}
+	.menu ul ul{
+		list-style:none;
+		position:absolute;
+		visibility:hidden;
+		}
+	.menu ul li:hover ul{
+		visibility:visible;
+		}
+		
+	.menu a:hover{
+		background-color: rgb(162, 236, 220);
+		}
+	
+	.menu ul ul li{
+		float:none;
+		width:100%;
+		border-bottom: 1px solid white;
+		}
+	.menu ul ul li a{
+		background-color: rgb(121, 214, 194);
+		}
+	#bt_menu{
+		display: none;
+		}
+	label[for='bt_menu']{
+		padding:5px;
+		background-color:  rgb(121, 214, 194);;
+		color:white;
+		font-family:'Arial';
+		text-align:center;
+		font-size:30px;
+		cursor:pointer;
+		display:none;
+		width:50px;
+		height:50px;
+		}	
+	label[for='bt_menu']:hover{
+		background-color:white;
+		color:  rgb(121, 214, 194);
+		}
+
+
+/* Colocando colunas lado a lado */
+.coluna{
+    
+    width: 25%;
+    padding: 5px;
+	display: grid;
+	margin: 10px;
+	margin-left: 100px;
+	margin-top: 30px;
+
+	float: left;
+	
+	
+
+}
+.linha {
+    margin: 0 -5px;
+	
+}
+
+/* Remove margens extras (causadas pelo padding)*/
+
+
+.card {
+box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+transition: 0.3s;
+width: 80%;
+height: 200px;
+background-color: beige;
+cursor: pointer;
+
+
+}
+
+.card:hover {
+box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+}
+
+.container {
+padding: 2px 16px;
+}
+
+.card h1{
+    font-size: 25px;
+    font-style: none; 
+    color: rgb(185, 48, 71);
+	text-align: center;
+	
+}
+
+.card h2{
+    font-size: 28px;
+    font-style: none; 
+    color: black;
+	
+	
+}
+
+.title{
+	text-align: center;
+	color: rgb(0, 0, 0);
+}
+
+.title2{
+	text-align: center;
+	margin-top: 350px;
+	color: rgb(0, 0, 0);
+}
+
+.hist{
+	width: 100%;
+	height: 50px;
+	background-color: beige;
+	border: 2px solid rgb(121, 214, 194);
+	
+
+}
+
+.hist > h5{
+text-align:   right;
+margin-top: -50px;
+margin-right: 10px;
+font-size: 15px;
+}
+
+
+.hist > h4{
+text-align: left; 
+margin-left: 10px;
+font-size: 20px;
+margin-top: 15px;
+}
+
+.add > img{
+
+	width: 8%;
+	height: 100px;
+	margin-top: 60px;
+	margin-bottom: 60px;
+	margin-left: auto;
+	margin-right: auto;
+	display: block;
+	cursor: pointer;
+}
+.add:hover{
+	opacity: 0.8;
+}
+
+.valor{
+	display: flex;
+}
+
+.valor > h2{
+margin-left: 35px;
+	
+}
+
+.valor > img{
+
+	margin-left: 10px;
+}
+
+
+@media screen and (max-width: 600px){
+	.coluna{
+		width: 70%;
+		display: block;
+		margin-bottom:20px;
+	
+	}
+
+	.title{
+		text-align: center;
+		margin-top: 100px;
+	}
+	.title2{
+		text-align: center;
+		margin-top: 100px;
+	}
+
+	.add > img{
+
+		width: 15%;
+		height: 80px;
+		margin-top: 60px;
+		margin-bottom: 60px;
+		margin-left: auto;
+		margin-right: auto;
+		display: block;
+	}
+	
+	}
+	@media screen and (max-width: 800px) {
+		.menu{
+			margin-left:-100%;
+			transition:all .4s; 
+			background-color: rgb(121, 214, 194);
+			}
+		label[for='bt_menu']{
+			display:block;
+			}
+		.menu>ul{
+			margin-left:0;
+			background-color: rgb(121, 214, 194);
+			}
+		.menu{
+			margin-top:5px;
+			}
+		.menu ul li{
+			width:100%;
+			float:none;
+			}
+		.menu ul ul{
+			position:static;
+			overflow:hidden;
+			max-height:0;
+			transition:all .4s;
+		}
+		
+		.menu ul li a{
+			background-color: rgb(121, 214, 194);
+			color: white;
+			border-bottom: 1px solid white;
+		}
+		.menu ul li a:hover{
+			background-color: rgb(121, 214, 194);
+		}
+		.menu ul ul li a{
+			background-color: rgb(121, 214, 194);
+			width:300px;
+		
+		}
+		.menu ul li:hover ul{
+			height:auto;
+			max-height:200px;
+			transition:all .4s;
+			}
+		#bt_menu:checked ~ .menu{
+			margin-left:0;
+		
+			}
+			.title{
+				text-align: center;
+				margin-top: 100px;
+			}
+
+			.coluna{
+				width: 70%;
+				display: block;
+				margin-bottom:20px;
+				margin-left: 30%;
+				margin-right: 30%;
+			
+			}
+
+			.title{
+				text-align: center;
+				margin-top: 100px;
+			}
+
+			.add > img{
+
+				width: 15%;
+				height: 80px;
+				margin-top: 60px;
+				margin-bottom: 60px;
+				margin-left: auto;
+				margin-right: auto;
+				display: block;
+			}
+		}
+
+@media screen and (min-width: 800px) and (max-width: 1000px){
+	.coluna{
+		width: 40%;
+		display: block;
+		margin-bottom:20px;
+		margin-left: 35%;
+		margin-right: 30%;
+	
+	}
+}
+
+.footer{
+
+			padding: 10px 10px 0px 10px; 
+			bottom: 0; 
+			width: 100%; 
+			/* Height of the footer*/  
+			height: 50px; 
+			background: rgb(121, 214, 194);
+			color: white; 
+			text-align: center;
+		}

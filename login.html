@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+
+    <link href="https://fonts.googleapis.com/css?family=Glegoo&display=swap" rel="stylesheet">
+
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+
+    <link rel="stylesheet" type="text/css" href="css/estilo-login.css" />
+
+    <title> Login </title>
+
+</head>
+
+<body>
+
+    <input type="checkbox" id="bt_menu">
+    <label for="bt_menu">&#9776;</label>
+    <!-- Menu Horizontal -->
+    <nav class="menu" >
+        <!--Lista que origina o Menu-->
+        <ul>
+            <li><a href="./index.html"> Home </a></li>              
+
+        </ul>
+    </nav> 
+    
+    <div class="usuario">
+        <img src="./imagens/login.png" alt="foto usuario">
+
+    </div>
+
+    <form id="form-login">
+        <div class="container">
+            <label for="nomeUsuario"><b>Email</b></label> <br>
+            <input type="text" placeholder="yyyyy@email.com" name="nomeUsuario" required> <br>
+
+            <label for="senha"><b>Senha</b></label> <br>
+            <input type="password" placeholder="Senha..." name="senha" required> <br>
+
+            <button type="submit"> Login </button> <br>
+            <label>
+                <input type="checkbox" checked="checked" name> Lembrar de mim
+            </label> <br>
+        </div>
+
+        <span class="senha"> <a href="cadastro.html">Não possui cadastro?</a>
+            </span>
+
+        <div class="container">
+            <button type="button" class="cancelbtn">Cancelar</button>
+        </div>
+
+    </form>
+
+    <br>
+
+
+<div class="footer"> 
+
+    CashUp 	&copy; Copyright | 3385-8010 | cashup@gmail.com
+</div>
+
+<script src="js/pesquisa.js"> </script>
+
+</body>
+
+</html>
